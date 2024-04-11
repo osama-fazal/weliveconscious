@@ -1,0 +1,867 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oswald:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+  }
+  a,button{
+    cursor: pointer;
+  }
+  :root{
+    --gray: #F8F8F8;
+    --bgc: #FFFEFC;
+    --blue: #00406A;
+    --brown: #C28D84;
+    --green: #459D39;
+    --dark-green: #3E8D33;
+    --dark-brown: #A55636;
+    --white: #fff;
+    --oswald: 'Oswald',sans-serif;
+    --lora: 'Lora',sans-serif;
+    --roboto: 'Roboto',sans-serif;
+  }
+  body{
+    background-color: var(--bgc);
+  }
+
+  header{
+    background-color: var(--gray);
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  header div.logo img{
+    max-height: 45px;
+    max-width: 226px;
+    object-fit: contain;
+  }
+  header div.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header div.contact span{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brown);
+    font-family: var(--oswald);
+  }
+  header div.contact button{
+    padding: 10px 0;
+    color: var(--white);
+    background-color: var(--blue);
+    width: 162px;
+    max-width: 100%;
+    font-family: var(--oswald);
+    font-size: 16px;
+    border: none;
+    border-radius: 100vw;
+  }
+  div.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  div.hero h1{
+    font-family: var(--lora);
+    font-size: 60px;
+    line-height: 51px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--blue);
+  }
+  div.hero h2{
+    margin-top: 12px;
+    font-family: var(--oswald);
+    font-size: 38px;
+    line-height: 49px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--brown);
+  }
+  div.hero h4{
+    margin-top: 26px;
+    margin-bottom: 40px;
+    font-family: var(--lora);
+    font-size: 32px;
+    line-height: 59px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--blue);
+    z-index: 10;
+  }
+  div.hero img.patren{
+    position: absolute;
+    top: 42%;
+  }
+  div.hero h3{
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 30px;
+    width: auto;
+    height: auto;
+    font-family: var(--roboto);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: var(--blue);
+  }
+
+  div.ingredients{
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.ingredients h2{
+    font-family: var(--lora);
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+  }
+  div.ingredients img.ing{
+    margin-top: 50px;
+  }
+  div.list{
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+  div.list div.start{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  div.list div.start div.img{
+    width: 50%;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  div.list div.start div.left{
+    width: 50%;
+  }
+  div.list div.start div.left h4{
+    font-family: var(--lora);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 59px;
+    color: var(--brown);
+  }
+  div.list div.start div.left p.subtitle{
+    font-family: var(--oswald);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--brown);
+    margin-top: 10px;
+  }
+  div.list div.start div.left ul{
+    margin-top: 10px;
+    list-style: none;
+  }
+  div.list div.start div.left ul li{
+    margin-top: 30px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--blue);
+  }
+  div.list div.start div.left p.summary{
+    margin-top: 20px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--blue);
+  }
+
+  div.list div.end{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-self: flex-end;
+    margin-top: 100px;
+  }
+  div.list div.end div.img{
+    width: 50%;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  div.list div.end div.img img{
+    width: 495px;
+  }
+  div.list div.end div.right{
+    width: 50%;
+  }
+  div.list div.end div.right h4{
+    font-family: var(--lora);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 59px;
+    color: var(--brown);
+  }
+  div.list div.end div.right p.subtitle{
+    font-family: var(--oswald);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--brown);
+    margin-top: 10px;
+  }
+  div.list div.end div.right ul{
+    margin-top: 10px;
+    list-style: none;
+  }
+  div.list div.end div.right ul li{
+    margin-top: 30px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--blue);
+  }
+  div.list div.end div.right div.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.list div.end div.right div.button a button{
+    width: 300px;
+    background-color: var(--green);
+    border: 0;
+    color: #F2F6F9;
+    border-radius: 100vw;
+    width: 300px;
+    margin: 45px auto 115px;
+    padding: 21px 0;
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--oswald);
+    transition: 0.3s all ease-in;
+  }
+  div.list div.end div.right div.button a button:hover{
+    background-color: var(--dark-green);
+  }
+  div.list div.start div.img img.cup{
+    width: 634px;
+  }
+  
+
+  div.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  div.customer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+  }
+  div.customer p{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.47;
+    position: relative;
+    text-align: center;
+    font-family: var(--oswald);
+    color: var(--dark-brown);
+  }
+  div.customer h4{
+    margin-top: 60px;
+    font-family: var(--lora);
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 0.98;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--brown);
+  }
+  div.customer div.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  div.customer div.testimonials div.card{
+    background-color: #F1EBE6;
+    padding: 30.4px 20px 30.4px 20px;
+    border-radius: 15px;
+    max-width: calc(100%/3);
+  }
+  div.customer div.testimonials div.card div.header{
+    position: relative;
+  }
+  div.customer div.testimonials div.card div.header img.qoute{
+    position: absolute;
+    max-width: 42px;
+    top: 0;
+    left: 0;
+  }
+  div.customer div.testimonials div.card div.header img.profile{
+    display: block;
+    margin: 0px auto;
+    width: 100px;
+    border-radius: 100vw;
+  }
+  div.customer div.testimonials div.card div.body{
+    min-height: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  div.customer div.testimonials div.card div.body p{
+    margin-top: 30px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--blue);
+  }
+  div.customer div.testimonials div.card div.footer svg{
+    display: none;
+  }
+  div.customer div.testimonials div.card div.footer p{
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--blue);
+  }
+
+
+  div.award{
+    margin-top: 162px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  div.award div.img{
+    width: 50%;
+  }
+  div.award div.img img{
+    width: 450px;
+  }
+  div.award div.right{
+    width: 50%;
+  }
+  div.award div.right h4{
+    font-family: var(--lora);
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 0.98;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--brown);
+  }
+  div.award div.right p{
+    margin-top: 30px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--blue);
+  }
+  div.award div.right div.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.award div.right div.button a button{
+    width: 300px;
+    background-color: var(--green);
+    border: 0;
+    color: #F2F6F9;
+    border-radius: 100vw;
+    width: 300px;
+    margin: 45px auto 115px;
+    padding: 21px 0;
+    font-size: 24px;
+    text-align: center;
+    font-family: var(--oswald);
+    transition: 0.3s all ease-in;
+  }
+  div.award div.right div.button a button:hover{
+    background-color: var(--dark-green);
+  }
+
+  p.money{
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  div.customer div p.description{
+    padding-top: 50px;
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    width: 770px;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.42;
+    text-align: center;
+    color: var(--blue);
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 50px 0px;
+    background: url(img/fbg.PNG);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+  div.bottom{
+    margin-bottom: 150px;
+  }
+  footer div{
+    display: flex;
+    max-width: 1000px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer img{
+    transform: translateY(-60%);
+    padding-bottom: 20px;
+  }
+  footer div a{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--oswald);
+    font-weight: 500;
+    color: var(--blue);
+    text-decoration: underline;
+  }
+  footer div p{
+    font-size: 14px;
+    padding-top: 50px;
+    font-family: var(--roboto);
+    font-weight: 500;
+    line-height: 1.43;
+    margin: 0px;
+    color: var(--blue);
+    text-align: center;
+  }
+  footer div ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    color: var(--blue);
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width:1200px){
+    .imgWidth{
+        width: 100%;
+    }
+    div.hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+        width: 100%;
+        padding: 20px;
+    }
+    div.hero h3 {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 30px;
+        width: auto;
+        height: auto;
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: var(--blue);
+    }
+    div.ingredients h2 {
+        font-family: var(--lora);
+        font-style: italic;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 38px;
+        text-align: center;
+    }
+    div.ingredients {
+        margin-top: 106px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    div.list div.start {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    div.list div.end {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-self: flex-end;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    div.list div.start div.img {
+        width: 100%;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    div.list div.start div.left {
+        width: 100%;
+    }
+    div.list div.end div.right {
+        width: 100%;
+    }
+    div.list div.end div.img {
+        width: 100%;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    div.customer div.testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: stretch;
+        gap: 20px;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    div.customer div.testimonials div.card {
+        background-color: #F1EBE6;
+        padding: 30.4px 20px 30.4px 20px;
+        border-radius: 15px;
+        max-width: 100%;
+    }
+    div.award {
+        margin-top: 162px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    div.award div.img {
+        width: 100%;
+    }
+    div.award div.right {
+        width: 100%;
+    }
+    div.bottom {
+        margin-bottom: 150px;
+        padding: 20px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 50px 0px;
+        background: url(img/fbg.PNG);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding: 20px;
+    }
+  }
+  @media screen and (max-width:786px) {
+    header {
+        background-color: var(--gray);
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    div.hero h1 {
+        font-family: var(--lora);
+        font-size: 34px;
+        line-height: 51px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--blue);
+    }
+    div.hero h2 {
+        margin-top: 12px;
+        font-family: var(--oswald);
+        font-size: 24px;
+        line-height: 49px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--brown);
+    }
+    div.hero h4 {
+        margin-top: 26px;
+        margin-bottom: 40px;
+        font-family: var(--lora);
+        font-size: 20px;
+        line-height: 59px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--blue);
+        z-index: 10;
+    }
+    div.hero h3 {
+        margin: 20px 0;
+        text-align: center;
+        font-size: 20px;
+        width: auto;
+        height: auto;
+        font-family: var(--roboto);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: var(--blue);
+    }
+    div.ingredients h2 {
+        font-family: var(--lora);
+        font-style: italic;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 38px;
+        text-align: center;
+    }
+    div.list div.start div.left h4 {
+        font-family: var(--lora);
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 59px;
+        color: var(--brown);
+    }
+    div.list div.start div.left p.subtitle {
+        font-family: var(--oswald);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        color: var(--brown);
+        margin-top: 10px;
+    }
+    div.list div.start div.left ul li {
+        margin-top: 30px;
+        font-family: var(--roboto);
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--blue);
+    }
+    div.list div.start div.left p.summary {
+        margin-top: 20px;
+        font-family: var(--roboto);
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--blue);
+    }
+    div.list div.end div.right h4 {
+        font-family: var(--lora);
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 59px;
+        color: var(--brown);
+    }
+    div.list div.end div.right p.subtitle {
+        font-family: var(--oswald);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 40px;
+        color: var(--brown);
+        margin-top: 10px;
+    }
+    div.list div.end div.right ul li {
+        margin-top: 30px;
+        font-family: var(--roboto);
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--blue);
+    }
+    div.list div.end div.img img {
+        width: 100%;
+    }
+    div.list div.start div.img img.cup {
+        width: 100%;
+    }
+    div.customer h4 {
+        margin-top: 60px;
+        font-family: var(--lora);
+        font-size: 34px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 0.98;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--brown);
+    }
+    div.award div.img img {
+        width: 100%;
+    }
+    div.award div.right h4 {
+        font-family: var(--lora);
+        font-size: 34px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 0.98;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--brown);
+    }
+    div.award div.right p {
+        margin-top: 30px;
+        font-family: var(--roboto);
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--blue);
+    }
+    div.customer div p.description {
+        padding-top: 50px;
+        font-family: var(--roboto);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 34px;
+        width: 770px;
+        max-width: 100%;
+        margin: 0 auto;
+        line-height: 1.42;
+        text-align: center;
+        color: var(--blue);
+    }
+    div.customer p {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.47;
+        position: relative;
+        text-align: center;
+        font-family: var(--oswald);
+        color: var(--dark-brown);
+    }
+    div.award div.right div.button a button {
+        width: 100%;
+        background-color: var(--green);
+        border: 0;
+        color: #F2F6F9;
+        border-radius: 100vw;
+        width: 300px;
+        margin: 45px auto 115px;
+        padding: 10px;
+        transition: 0.3s all ease-in;
+    }
+    div.list div.end div.right div.button a button {
+        width: 300px;
+        background-color: var(--green);
+        border: 0;
+        color: #F2F6F9;
+        border-radius: 100vw;
+        margin: 45px auto 115px;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
+        font-family: var(--oswald);
+        transition: 0.3s all ease-in;
+    }    
+    img.bowl{
+        width: 100%;
+    }
+  }
